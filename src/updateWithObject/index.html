@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update With Object</title>
+</head>
+<body>
+    <form>
+        <select id="datalistOne" onchange="updatingSecondSelect(this, document.getElementById('datalistTwo'), document.getElementById('datalistThree'))">
+            <option value="">Select First Option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <select id="datalistTwo" onchange="updatingThirdSelect(document.getElementById('datalistOne'), this, document.getElementById('datalistThree'))">
+        </select>
+        <select id="datalistThree">
+        </select>
+    </form>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

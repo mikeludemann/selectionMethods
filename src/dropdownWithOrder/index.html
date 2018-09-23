@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Dropdown with Updating Methods</title>
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+    <form name="main">
+        <select name="one" onchange="updateChange(this,'three','');">
+            <option value="0" selected>nothing</option>
+            <option value="1" selected>option1</option>
+            <option value="2" selected>option2</option>
+            <option value="3" selected>option3</option>
+            <option value="4" selected>option4</option>
+        </select>
+        <select id="two" onchange="updateChange(this,'three','');">
+            <option value="0" selected>nothing</option>
+            <option value="1" selected>option1</option>
+            <option value="2" selected>option2</option>
+            <option value="3" selected>option3</option>
+            <option value="4" selected>option4</option>
+        </select>
+        <select id="three" onchange="updateChange(this,'one','two');">
+            <option value="0" selected>nothing</option>
+            <option value="1" selected>optionA</option>
+            <option value="2" selected>optionB</option>
+            <option value="3" selected>optionC</option>
+            <option value="4" selected>optionD</option>
+        </select>
+    </form>
+</body>
+</html>
