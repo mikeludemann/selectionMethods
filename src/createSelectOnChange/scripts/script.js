@@ -2,7 +2,7 @@ $(function () {
 
     var mainElement = $("#eat"),
         newSelect = $('<select></select>'),
-        countries = [];
+        arr = [];
 
     mainElement.children().each(function () {
 
